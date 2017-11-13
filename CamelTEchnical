@@ -1,0 +1,18 @@
+
+<pre>
+Message contains data which is being transferred to a route. Each message has a unique identifier and it’s constructed out of a body, headers, and attachments.
+
+Exchange is the container of a message and it is created when a message is received by a consumer during the routing process.
+Exchange allows different types of interaction between systems – it can define a one-way message or a request-response message
+
+Endpoint is a channel through which system can receive or send a message. It can refer to a web service URI, queue URI, file,
+email address, etc
+
+Component acts as an endpoint factory. To put it simply, components offer an interface to different technologies using the same 
+approach and syntax. Camel already supports a lot of components in its DSLs for almost every possible technology, but it also
+gives the ability for writing custom components
+
+Processor is a simple Java interface which is used to add custom integration logic to a route. It contains a single process 
+method used to preform custom business logic on a message received by a consumer
+
+</pre>
